@@ -130,7 +130,7 @@ function addAnchors() {
 function addToc() {
 	var toc = document.createElement("nav");
 	toc.id = "toc";
-	toc.innerHTML = "<h1><a href=index.html>목차</a></h1>";
+	toc.innerHTML = "<h1><a href=index.html>Table of Contents</a></h1>";
 	var hs = $("h1, h2, h3, h4, h5, h6");
 	for (var i=0; i< hs.length; i++) {
 		var level = hs[i].tagName.substring(1);
@@ -171,7 +171,7 @@ function paginate() {
  */
 function insertHeader() {
 	var header = document.createElement("header");
-	header.innerHTML = "<h1>셀레늄 문서</h1>";
+	header.innerHTML = "<h1>Selenium Documentation</h1>";
 
   if (getCurrentPage() != 'index' || window.location.pathname === '/docs' || window.location.pathname === '/docs/')
     header.innerHTML += "<a id='home_link' href='index.html'>back to index</a>";
